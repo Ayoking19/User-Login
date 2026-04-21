@@ -5,7 +5,7 @@ const mongoose = require('mongoose'); // [Imports the Mongoose database translat
 require('dotenv').config(); // [Unlocks the .env file so our server can read the hidden secrets inside]
 
 // NEW: Import our User Model blueprint
-const User = require('./models/User');
+const User = require('./models/user');
 
 // 2. Initialize the Express application
 const app = express();
