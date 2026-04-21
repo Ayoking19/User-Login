@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Dashboard</title>
+    <!-- Linking our world-class dark theme CSS -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Adding a specific rule just for the top-left Log Out button -->
+    <style>
+        .logout-btn {
+            position: absolute; /* Takes the button out of the normal document flow */
+            top: 20px; /* Pins it 20 pixels from the top of the screen */
+            left: 20px; /* Pins it 20 pixels from the left of the screen */
+            width: auto;
+            padding: 8px 20px;
+            background-color: transparent;
+            border: 1px solid #00ea7b;
+            color: #00ea7b;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #00ea7b;
+            color: #0a0a0a;
+            box-shadow: 0 0 10px rgba(0, 234, 123, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- The Log Out Button (A link that takes them back to the login page) -->
+    <a href="/" class="logout-btn">Log Out</a>
+
+    <!-- The Glassmorphism Welcome Card -->
+    <div class="container">
+        <h2>Welcome Aboard!</h2>
+        <p style="color: #ffffff; font-size: 16px;">You have successfully logged into the secure system.</p>
+    </div>
+</body>
+</html>
